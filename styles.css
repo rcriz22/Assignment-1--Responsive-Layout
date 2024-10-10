@@ -1,40 +1,46 @@
 *{
     box-sizing: border-box;
 }
-body{ 
+
+body { 
     font-family: sans-serif;
     margin:0;
 }
-header{
+
+header {
     background-color: #120323;
     color: #97bf04;
     padding:15px;   
 }
-#container{
-    display: flex;
-}
-figure{
-    display: flex;
 
+#container {
+    display: flex;
 }
+
+figure {
+    display: flex;
+}
+
 figure img {
     border: #d9043d 5px solid;
 }
+
 figcaption {
     padding: 10px;
     margin-left: 10px;
 }
-    h2{
+    h2 {
     color: #120323;
 }
+
 aside {
     background-color: #97bf04;
 }
 
-footer{
+footer {
     background-color: #d9043d;
     color: white;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -51,7 +57,8 @@ footer{
         flex-direction: row;
         justify-content: flex-start;
         gap: 30px;
-        padding: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px;
         width: 100%;
     }
     figure img{
@@ -63,8 +70,13 @@ footer{
         padding: 10px ;
         width:65%;
         height: auto;
-    }   
+    }  
+    footer{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    } 
 }
+
 /* For devices less than 1000px wide */
 @media (min-width:769px) and (max-width:999px){
     header{ 
@@ -79,22 +91,30 @@ footer{
         flex-direction: column;
     }
     figure img{
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
         margin-top: 30px;
     }
     aside{
         margin-bottom: 10px;
-        padding: 10px;
+        padding: 15px;
+    }
+    footer { 
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 }
+
 /* For devices less than 768px wide */
-@media (min-width:0px) and (max-width:768px){
+@media only screen and (max-width:768px){
     header { 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    header img{
+        width: 20%;
     }
     #container{
         display: flex;
@@ -112,5 +132,9 @@ footer{
     aside{
         padding:10px;
         margin-bottom: 10px;
+    }
+    footer { 
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 }
