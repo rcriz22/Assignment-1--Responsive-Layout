@@ -67,5 +67,28 @@ footer{
 }
 /* For devices less than 1000px wide */
 @media (min-width:769px) and (max-width:999px){
-
+    header{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    figure img{
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    aside{
+        margin-bottom: 10px;
+    }
+/* For devices less than 768px wide */
+@media (min-width:0px) and (max-width:768px){
+    header{ 
+        
+    }
 }
